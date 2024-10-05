@@ -1,0 +1,19 @@
+ECHO is on.
+
+# Node.js dependencies
+node_modules/
+
+# Visual Studio Code settings
+.vscode/
+
+# Build output
+build/
+dist/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+
