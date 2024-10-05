@@ -1,0 +1,41 @@
+.certifications-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.certification-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Space between items */
+}
+
+.certification-item {
+    flex: 1 1 300px;
+    /* Base size for the item */
+    max-width: 300px;
+    /* Limit width */
+    text-align: center;
+    margin: 10px;
+}
+
+.certification-image {
+    width: 100%;
+    /* Make the image take full width */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 200px;
+    /* Set a maximum height to limit size */
+    object-fit: contain;
+    /* Ensure the entire image fits within the box */
+    border: 2px solid #333;
+    /* Optional border */
+    border-radius: 8px;
+    /* Optional rounded corners */
+}
+
+.certification-item p {
+    margin-top: 10px;
+    /* Space between image and text */
+}

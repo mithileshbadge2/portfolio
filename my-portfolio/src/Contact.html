@@ -1,0 +1,18 @@
+<form id="test-form">
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="email" name="email" placeholder="Your email" required />
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send Message</button>
+</form>
+
+<script type="text/javascript">
+    document.getElementById('test-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+            .then(function () {
+                console.log('SUCCESS!');
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+    });
+</script>

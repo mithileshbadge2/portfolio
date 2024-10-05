@@ -1,0 +1,43 @@
+.projects-section {
+    padding: 50px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.project-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Allows items to wrap if the screen is too small */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+.project-item {
+    background-color: #080808;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    width: 45%;
+    /* Adjust width to fit two side by side */
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect total width */
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%;
+        /* Full width on small screens */
+    }
+}

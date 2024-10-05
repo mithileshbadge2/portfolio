@@ -1,0 +1,34 @@
+.skills-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.skill-icon {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+}
